@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 
-const page = (
+
+
+function Page(){
+return(
   <div>
-  <img src="./logo192.png" alt=""></img>
+  <img src="./logo192.png" alt="" width="40px"></img>
   <h1>Fun facts about React</h1>
   <ul>
     <li>Was first released in 2013</li>
@@ -15,9 +17,10 @@ const page = (
   </ul>
 </div>
 )
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- page
+ <Page />
 );
 
 
