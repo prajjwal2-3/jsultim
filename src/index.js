@@ -1,13 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css';
+ function Page(){
+ return(
+     <div> 
+     <Nav/>
+     <Maincontent />
+     </div>
+     )
+ }
 
-
-
-function Page(){
+ function Nav(){
+return(
+  <div className='nav-bar'>
+  <img src="./logo192.png" alt="" width="40px"></img>
+  <ul className='list'>
+    <li>price</li>
+    <li>contact</li>
+    <li>about</li>
+  </ul>
+ </div>
+)
+ }
+function Maincontent(){
 return(
   <div>
-  <img src="./logo192.png" alt="" width="40px"></img>
-  <h1>Fun facts about React</h1>
+    <h1>Fun facts about React</h1>
   <ul>
     <li>Was first released in 2013</li>
     <li>was originally created by jordan walke</li>
